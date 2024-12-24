@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IX Tunggawarman</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #4CAF50; /* Green theme background */
+            color: #ffffff; /* White text */
+        }
+
+        header {
+            background-color: #d32f2f; /* Red header */
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            height: 80px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin: 10px 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .widget {
+            background-color: #1e88e5; /* Blue widget background */
+            border-radius: 8px;
+            width: 300px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .widget h2 {
+            background-color: #6d4c41; /* Brown title */
+            padding: 10px;
+            text-align: center;
+            margin: -15px -15px 15px -15px;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .widget ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .widget ul li {
+            background-color: #424242; /* Dark gray for list */
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .task-button {
+            display: block;
+            background-color: #d32f2f; /* Red button */
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            margin: 20px auto;
+            width: 200px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .task-button:hover {
+            background-color: #b71c1c;
+        }
+
+        .user-form {
+            background-color: #1e88e5; /* Blue background */
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .user-form h2 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .user-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+
+        .user-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .user-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .user-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #d32f2f;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .user-form button:hover {
+            background-color: #b71c1c;
+        }
+
+        .gallery-button {
+            display: block;
+            background-color: #6d4c41; /* Brown button */
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            margin: 20px auto;
+            width: 200px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .gallery-button:hover {
+            background-color: #5d4037;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo-placeholder.png" alt="IX Tunggawarman Logo"> <!-- Ganti dengan URL logo asli -->
+        <h1>IX Tunggawarman</h1>
+    </header>
+
+    <div class="container">
+        <!-- Widget Jadwal Pelajaran -->
+        <div class="widget">
+            <h2>Jadwal Pelajaran</h2>
+            <ul>
+                <li>Senin: Matematika, Bahasa Indonesia, IPA</li>
+                <li>Selasa: IPS, Bahasa Inggris, Seni Budaya</li>
+                <li>Rabu: Olahraga, PPKn, Prakarya</li>
+                <li>Kamis: Bahasa Jawa, IPA, Matematika</li>
+                <li>Jumat: Agama, Bahasa Indonesia, Kegiatan Kelas</li>
+            </ul>
+        </div>
+
+        <!-- Widget Pengurus Kelas -->
+        <div class="widget">
+            <h2>Pengurus Kelas</h2>
+            <ul>
+                <li>Ketua: Budi Santoso</li>
+                <li>Wakil Ketua: Rina Putri</li>
+                <li>Sekretaris: Andi Pratama</li>
+                <li>Bendahara: Siti Nurhaliza</li>
+            </ul>
+        </div>
+
+        <!-- Widget Wali Kelas -->
+        <div class="widget">
+            <h2>Wali Kelas</h2>
+            <ul>
+                <li>Nama: Ibu Sri Wahyuni</li>
+                <li>Nomor Kontak: 081234567890</li>
+                <li>Email: sri.wahyuni@example.com</li>
+            </ul>
+        </div>
+    </div>
+
+    <a href="#" class="task-button">Daftar Tugas</a>
+
+    <!-- Tombol Galeri Kegiatan Kelas -->
+    <a href="#" class="gallery-button">Galeri Kegiatan Kelas</a>
+
+    <!-- Form Akun Pengguna -->
+    <div class="user-form">
+        <h2>Akun Pengguna</h2>
+        <form action="#" method="POST">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan Nama" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan Email" required>
+
+            <label for="role">Peran:</label>
+            <select id="role" name="role" required>
+                <option value="">Pilih Peran</option>
+                <option value="guru">Guru</option>
+                <option value="siswa">Siswa</option>
+            </select>
+
+            <label for="class">Kelas (khusus siswa):</label>
+            <input type="text" id="class" name="class" placeholder="Masukkan Kelas" required>
+
+            <button type="submit">Simpan</button>
+        </form>
+    </div>
+</body>
+</html>
